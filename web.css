@@ -9,14 +9,14 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #0d1117 0%, #0a2a43 100%);
-      color: #ffffff;
+      background: linear-gradient(135deg, green 0.6%, yellow 100%);
+      color: blue;
       overflow-x: hidden;
       position: relative;
     }
 
     header {
-      background: rgba(13, 17, 23, 0.9);
+      background: green;
       padding: 1rem 2rem;
       position: sticky;
       top: 0;
@@ -29,7 +29,7 @@
     .logo {
       font-size: 1.2rem;
       font-weight: bold;
-      color: #58a6ff;
+      color: blue;
       margin: 0;
     }
 
@@ -42,14 +42,14 @@
     }
 
     nav a {
-      text-decoration: none;
-      color: white;
+      text-decoration: arial;
+      color: blue;
       transition: color 0.3s;
     }
 
     nav a:hover,
     nav a.active {
-      color: #58a6ff;
+      color: Blue;
     }
 
     .hero {
@@ -65,12 +65,12 @@
     }
 
     .hero h2 span {
-      color: #58a6ff;
+      color: Blue;
     }
 
     .hero p {
       font-size: 1.2rem;
-      color: #c9d1d9;
+      color: blue;
     }
 
     .hero .buttons {
@@ -78,11 +78,11 @@
     }
 
     .btn {
-      background: #58a6ff;
-      color: #0d1117;
+      background: green;
+      color: blue;
       padding: 0.8rem 1.2rem;
       border-radius: 6px;
-      text-decoration: none;
+      text-decoration: arial;
       margin: 0 0.5rem;
       display: inline-block;
       transition: background 0.3s;
@@ -94,8 +94,8 @@
 
     .btn.secondary {
       background: transparent;
-      border: 1px solid #58a6ff;
-      color: #58a6ff;
+      border: 1px solid blue;
+      color: blue;
     }
 
     .btn.secondary:hover {
