@@ -9,14 +9,14 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #808080; /* grey background */
-      color: #add8e6; /* light blue text */
+      background: #000000; /* pure black background */
+      color: #001f4d; /* dark blue text */
       overflow-x: hidden;
       position: relative;
     }
 
     header {
-      background: rgba(13, 17, 23, 0.9);
+      background: rgba(0, 0, 0, 0.9); /* dark black header background */
       padding: 1rem 2rem;
       position: sticky;
       top: 0;
@@ -29,7 +29,7 @@
     .logo {
       font-size: 1.2rem;
       font-weight: bold;
-      color: #58a6ff;
+      color: #001f4d; /* dark blue */
       margin: 0;
     }
 
@@ -43,13 +43,13 @@
 
     nav a {
       text-decoration: none;
-      color: #add8e6; /* light blue text for nav links */
+      color: #001f4d; /* dark blue nav links */
       transition: color 0.3s;
     }
 
     nav a:hover,
     nav a.active {
-      color: #58a6ff;
+      color: #003366; /* slightly brighter blue on hover */
     }
 
     .hero {
@@ -62,16 +62,16 @@
     .hero h2 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
-      color: #add8e6; /* light blue */
+      color: #001f4d; /* dark blue */
     }
 
     .hero h2 span {
-      color: #58a6ff;
+      color: #003366; /* a bit brighter dark blue */
     }
 
     .hero p {
       font-size: 1.2rem;
-      color: #add8e6; /* light blue */
+      color: #001f4d; /* dark blue */
     }
 
     .hero .buttons {
@@ -79,8 +79,8 @@
     }
 
     .btn {
-      background: #58a6ff;
-      color: #0d1117;
+      background: #001f4d; /* dark blue button background */
+      color: #ffffff; /* white text on buttons for contrast */
       padding: 0.8rem 1.2rem;
       border-radius: 6px;
       text-decoration: none;
@@ -90,17 +90,18 @@
     }
 
     .btn:hover {
-      background: #1f6feb;
+      background: #003366; /* brighter dark blue on hover */
     }
 
     .btn.secondary {
       background: transparent;
-      border: 1px solid #58a6ff;
-      color: #58a6ff;
+      border: 1px solid #001f4d;
+      color: #001f4d;
     }
 
     .btn.secondary:hover {
-      background: #161b22;
+      background: #000a1a;
+      color: #003366;
     }
 
     .content {
@@ -112,12 +113,12 @@
     .content h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
-      color: #add8e6; /* light blue */
+      color: #001f4d; /* dark blue */
     }
 
     .content p {
       line-height: 1.6;
-      color: #add8e6; /* light blue */
+      color: #001f4d; /* dark blue */
     }
 
     /* Floating Animated Background Dots */
@@ -136,13 +137,13 @@
       position: absolute;
       width: 10px;
       height: 10px;
-      background: rgba(88, 166, 255, 0.3);
+      background: rgba(0, 31, 77, 0.3); /* dark blue dots */
       border-radius: 50%;
       animation: moveDots 20s linear infinite;
     }
 
     .dot:nth-child(odd) {
-      background: rgba(88, 166, 255, 0.5);
+      background: rgba(0, 31, 77, 0.5);
     }
 
     @keyframes moveDots {
