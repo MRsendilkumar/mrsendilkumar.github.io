@@ -2,8 +2,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #000000; /* solid black background */
-  color: #ffffff; /* white text */
+  background: black; /* solid black background */
+  color: white; /* white text */
   overflow-x: hidden;
   position: relative;
 }
