@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -9,14 +9,14 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, green 0.6%, yellow 100%);
-      color: blue;
+      background: #808080; /* grey background */
+      color: #add8e6; /* light blue text */
       overflow-x: hidden;
       position: relative;
     }
 
     header {
-      background: green;
+      background: rgba(13, 17, 23, 0.9);
       padding: 1rem 2rem;
       position: sticky;
       top: 0;
@@ -29,7 +29,7 @@
     .logo {
       font-size: 1.2rem;
       font-weight: bold;
-      color: blue;
+      color: #58a6ff;
       margin: 0;
     }
 
@@ -42,14 +42,14 @@
     }
 
     nav a {
-      text-decoration: arial;
-      color: blue;
+      text-decoration: none;
+      color: #add8e6; /* light blue text for nav links */
       transition: color 0.3s;
     }
 
     nav a:hover,
     nav a.active {
-      color: Blue;
+      color: #58a6ff;
     }
 
     .hero {
@@ -62,15 +62,16 @@
     .hero h2 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
+      color: #add8e6; /* light blue */
     }
 
     .hero h2 span {
-      color: Blue;
+      color: #58a6ff;
     }
 
     .hero p {
       font-size: 1.2rem;
-      color: blue;
+      color: #add8e6; /* light blue */
     }
 
     .hero .buttons {
@@ -78,11 +79,11 @@
     }
 
     .btn {
-      background: green;
-      color: blue;
+      background: #58a6ff;
+      color: #0d1117;
       padding: 0.8rem 1.2rem;
       border-radius: 6px;
-      text-decoration: arial;
+      text-decoration: none;
       margin: 0 0.5rem;
       display: inline-block;
       transition: background 0.3s;
@@ -94,8 +95,8 @@
 
     .btn.secondary {
       background: transparent;
-      border: 1px solid blue;
-      color: blue;
+      border: 1px solid #58a6ff;
+      color: #58a6ff;
     }
 
     .btn.secondary:hover {
@@ -111,11 +112,12 @@
     .content h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
+      color: #add8e6; /* light blue */
     }
 
     .content p {
       line-height: 1.6;
-      color: #e6edf3;
+      color: #add8e6; /* light blue */
     }
 
     /* Floating Animated Background Dots */
