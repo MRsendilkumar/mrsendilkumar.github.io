@@ -7,7 +7,6 @@ body {
   overflow-x: hidden;
   position: relative;
 }
-
 header {
   background: rgba(0, 0, 0, 0.9); /* black header */
   padding: 1rem 2rem;
