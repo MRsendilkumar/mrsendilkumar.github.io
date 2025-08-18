@@ -9,7 +9,7 @@
 html, body {
   height: 100%;
   background: black;
-  color: white;
+  color: #58a6ff;
   font-family: 'Segoe UI', sans-serif;
   overflow-x: hidden;
   position: relative;
@@ -18,7 +18,7 @@ html, body {
 /* Layout containers */
 section, header, nav, footer, main, article, aside, div {
   background-color: black;
-  color: white;
+  color: #58a6ff;
 }
 
 /* Header */
@@ -36,7 +36,7 @@ header {
 .logo {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #58a6ff;
   margin: 0;
 }
 
@@ -51,13 +51,13 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #ffffff;
+  color: #58a6ff;
   transition: color 0.3s;
 }
 
 nav a:hover,
 nav a.active {
-  color: #58a6ff;
+  color: #1f80e0;
 }
 
 /* Hero Section */
@@ -72,16 +72,16 @@ nav a.active {
 .hero h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: #58a6ff;
 }
 
 .hero h2 span {
-  color: #58a6ff;
+  color: #1f80e0;
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: #ffffff;
+  color: #58a6ff;
 }
 
 .hero .buttons {
@@ -106,13 +106,13 @@ nav a.active {
 
 .btn.secondary {
   background: transparent;
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  border: 1px solid #58a6ff;
+  color: #58a6ff;
 }
 
 .btn.secondary:hover {
   background: #1a1a1a;
-  color: #ffffff;
+  color: #58a6ff;
 }
 
 /* Content Sections */
@@ -121,18 +121,18 @@ nav a.active {
   margin: auto;
   padding: 3rem 2rem;
   background-color: black;
-  color: white;
+  color: #58a6ff;
 }
 
 .content h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: #58a6ff;
 }
 
 .content p {
   line-height: 1.6;
-  color: #ffffff;
+  color: #58a6ff;
 }
 
 /* Form Styling */
@@ -140,7 +140,7 @@ form input,
 form textarea,
 form button {
   background-color: #111;
-  color: white;
+  color: #58a6ff;
   border: 1px solid #444;
   padding: 0.5rem;
   margin: 0.5rem 0.5rem 0.5rem 0;
@@ -174,7 +174,7 @@ a:hover {
 /* Footer */
 footer {
   background: black;
-  color: white;
+  color: #58a6ff;
   text-align: center;
   padding: 2rem 1rem;
 }
