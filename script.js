@@ -1,9 +1,8 @@
 /* ===============================
-   Portfolio Main JavaScript File
-   Author: Mohith Raj Sendil Kumar
+   PORTFOLIO INTERACTIONS
 ================================ */
 
-/* ---------- Active Navbar Link ---------- */
+/* Active navbar */
 const navLinks = document.querySelectorAll("nav ul li a");
 const currentPage = window.location.pathname.split("/").pop();
 
@@ -13,21 +12,10 @@ navLinks.forEach(link => {
   }
 });
 
-/* ---------- Smooth Scrolling ---------- */
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", e => {
-    e.preventDefault();
-    const target = document.querySelector(anchor.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-  });
-});
-
-/* ---------- Fade-in on Scroll ---------- */
+/* Fade-in on scroll */
 const faders = document.querySelectorAll(".fade-in");
 
-const fadeObserver = new IntersectionObserver(entries => {
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
@@ -35,50 +23,39 @@ const fadeObserver = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.2 });
 
-faders.forEach(el => fadeObserver.observe(el));
+faders.forEach(el => observer.observe(el));
 
-/* ---------- Typing Effect ---------- */
-const typingElement = document.getElementById("typing");
-const words = ["AI Projects", "Chess Engines", "Web Applications"];
-let wordIndex = 0;
-let charIndex = 0;
-let deleting = false;
+/* Typing effect */
+const typing = document.getElementById("typing");
+const words = ["AI Projects", "Chess Engines", "Web Experiences"];
+let w = 0, c = 0, deleting = false;
 
-function typeEffect() {
-  if (!typingElement) return;
-
-  const currentWord = words[wordIndex];
+function type() {
+  if (!typing) return;
+  const word = words[w];
 
   if (!deleting) {
-    typingElement.textContent = currentWord.slice(0, ++charIndex);
-    if (charIndex === currentWord.length) {
+    typing.textContent = word.slice(0, ++c);
+    if (c === word.length) {
       deleting = true;
-      setTimeout(typeEffect, 1200);
+      setTimeout(type, 1200);
       return;
     }
   } else {
-    typingElement.textContent = currentWord.slice(0, --charIndex);
-    if (charIndex === 0) {
+    typing.textContent = word.slice(0, --c);
+    if (c === 0) {
       deleting = false;
-      wordIndex = (wordIndex + 1) % words.length;
+      w = (w + 1) % words.length;
     }
   }
-  setTimeout(typeEffect, deleting ? 50 : 100);
+  setTimeout(type, deleting ? 50 : 100);
 }
+type();
 
-typeEffect();
-
-/* ---------- Dark Mode Toggle ---------- */
-const themeToggle = document.getElementById("theme-toggle");
-
-themeToggle?.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  localStorage.setItem(
-    "theme",
-    document.body.classList.contains("dark") ? "dark" : "light"
-  );
+/* Cursor glow */
+const glow = document.querySelector(".cursor-glow");
+document.addEventListener("mousemove", e => {
+  if (!glow) return;
+  glow.style.left = e.clientX + "px";
+  glow.style.top = e.clientY + "px";
 });
-
-if (localStorage.getItem("theme") === "dark") {
-  document.body.classList.add("dark");
-}
